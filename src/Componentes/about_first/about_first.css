@@ -1,0 +1,80 @@
+.about_one_cont{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.about_one_text_cont{
+    width: 75%;
+    margin-top: 5%;
+    position: absolute;
+}
+
+.about_one_title{
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.about_one_text{
+    font-size: 1.2em;
+}
+/*Animations*/
+.about_one_cont{
+        -moz-animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        -moz-animation-name: backgroundOp;
+        -webkit-animation-name: backgroundOp;
+      }
+      
+      @-moz-keyframes backgroundOp {
+        from {
+          background-color: black;
+        }
+        to {
+          background-color: white;
+        }
+    }
+        @-webkit-keyframes backgroundOp {
+            from {
+              background-color: black;
+            }
+            to {
+              background-color: white;
+            }
+          }
+      
+
+.about_one_text
+{
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-name: slidein-left;
+    -webkit-animation-name: slidein-left;
+  }
+  
+  @-moz-keyframes slidein-left {
+    from {
+      margin-left: 60%;
+      width: 100%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @-webkit-keyframes slidein-left {
+    from {
+      margin-left: 60%;
+      width: 100%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

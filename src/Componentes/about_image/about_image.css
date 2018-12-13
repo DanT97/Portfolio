@@ -1,0 +1,86 @@
+.about_image_cont{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+.about_img{
+    height: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-class{
+    margin-inline-start: 0;
+    height: 50vh;
+    width: 100%;
+  
+}
+
+.car_img{
+width: 100%;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .car_img{
+       margin-bottom: 0;
+       height: 100vh;
+       object-fit: cover;
+       object-position: 15% 
+    }
+}
+
+/*animations*/
+
+.custom-class{
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: backgroundOp;
+    -webkit-animation-name: backgroundOp;
+  }
+  
+  @-moz-keyframes backgroundOp {
+    from {
+      background-color: black;
+    }
+    to {
+      background-color: white;
+    }
+}
+    @-webkit-keyframes backgroundOp {
+        from {
+          background-color: black;
+        }
+        to {
+          background-color: white;
+        }
+      }
+.car_img{
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: op;
+    -webkit-animation-name: op;
+      }
+      
+      @-moz-keyframes op {
+        from {
+          opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+        @-webkit-keyframes backgroundOp {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+          }
